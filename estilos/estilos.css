@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#tituloPag{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.815);
+    padding: 25px; 
+    justify-content: space-between;
+}
+.titulo{
+    text-align: center;
+    color: grey;
+    padding: 1rem;
+    font-family: Baskervville SC;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    background: rgb(176, 173, 173);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 15rem;
+    border: solid 1px gray;
+    border-radius: 3rem;
+    margin: 5px;
+}
+
+.img{
+    height: 9rem;
+    width: 8rem;
+}
+
+.botonAgregar{
+    margin: 5px;
+    padding: 5px;
+    background-color: #3734343e;
+    border-radius: 5rem;
+}
+.botonAgregar:hover{
+    filter: grayscale(100%);
+    transform: scale(1.09);
+}
+
+.botonMostrar{
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.815);
+    cursor: pointer;
+}
+
+.botonLimpiar{
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.815);
+    cursor: pointer;
+}
+
+
+.botonCompras{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(176, 173, 173);
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    
+}
+
+.botonComprar{
+    background: black;
+    color: #f5f5f5;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#div-carrito{
+    text-align: right;
+}
+.carritoCompras{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    background: rgb(176, 173, 173);
+}
+
+.tituloCarrito{
+    background: rgb(51, 51, 51);
+    text-align: center;
+    color: whitesmoke;
+}
+.mostrar{
+    margin: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-family: Quicklime;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.815);;
+    cursor: pointer;
+}
+
+.total{
+    color:white;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.footer{
+    background-color: black;
+    font-size: 20px;
+    color: #f5f5f5;
+    padding: 5px;
+    text-align: center;
+}
+
+@media(max-width: 767px){
+    .container{
+        padding:30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box:nth-child(1) {
+        grid-column-start: span 1;
+    }
+    .box:nth-child(4) {
+        grid-column-start: span 1;
+    }
+};
